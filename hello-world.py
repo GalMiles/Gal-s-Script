@@ -5,7 +5,7 @@ from flask import Flask, redirect, url_for, request
 method =['newCasesPeak', 'deathsPeak','recoveredPeak','status']
 countries =['israel', 'england']
 
-app = flask.Flask(_name_)
+app = flask.Flask(__name__)
 #app.config["DEBUG"] = True
 
 @app.route('/') #empty
