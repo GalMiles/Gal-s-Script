@@ -4,9 +4,10 @@ app = Flask(__name__)
 @app.route('/')
 def hello_world():
     return 'Hello, World!'
+
 @app.route('/<name>')
 def user(name)
-    return f"Hello {name}!"
+    return 'Hello {name}!'
 
 if __name__ =="__main__":
     app.run()
