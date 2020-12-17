@@ -3,7 +3,9 @@ pipeline {
     stages {
         stage('Stage 1') {
             steps {
-                echo 'Hello world!' 
+                script {
+                    sh 'ls -la'
+                }
             }
         }
     }
